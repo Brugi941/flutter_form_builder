@@ -195,7 +195,7 @@ class FormBuilderSearchableDropdown<T> extends FormBuilderField<T> {
           items: items,
           maxHeight: 300,
           onFind: onFind,
-          onChanged: (val) {
+          onChanged: (T? val) {
             state.requestFocus();
             state.didChange(val);
           },
